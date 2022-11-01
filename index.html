@@ -34,6 +34,7 @@
         }
       }
     }
+    
 
     body {
       padding-left: 10px;
@@ -71,6 +72,7 @@
 
     .welcome {
       background: rgb(236, 106, 77);
+      background-image: url(bg1.jpg);
     }
 
     .welcome-text {
@@ -113,6 +115,12 @@
       font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 
+    }
+    .alert{
+      color: black;
+    }
+    .sup{
+      font-size: 40px;
     }
   </style>
 </head>
@@ -192,7 +200,7 @@
 
   <br>
   <!-- Vision -->
-  <div class="alert alert-warning " role="alert">
+  <div class="alert alert-light " role="alert">
     <font size="5" face="Cooper Black">
       <h1 class="d-flex justify-content-center"> Vision & Mission</h1>
     </font>
@@ -204,32 +212,35 @@
   </div>
   
    <!-- About us & Msg -->
-   <div class="row" >
-    <div class="col-sm-6">
-      <div class="card "  align="center">
-        <div class="card-body">
-          <h2 class="card-title"><font size="9" face="Cooper Black">
-            About us
-          </font></h2>
-          <p class="card-text"><h4> Raut agro is leading manufacturing sales firm from Maharashtra which provides wide range of agricultural equipment’s(Tractor Operated) across India. The company with professionally qualified well experienced persons in the field of manufacturing and marketing, We at Raut Agro engineering believe in 100% customer satisfaction by providing quality products and excellent after sale service. </h4></p>
-          
-        </div>
+   <div class="card-group container-fluid" align="center">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><font size="9" face="Cooper Black">
+          About us
+        </font></h5>
+        <p class="card-text r"><h4> Raut agro is leading manufacturing sales firm from Maharashtra which provides wide range of agricultural equipment’s (Tractor Operated) across India. The company with professionally qualified well experienced persons in the field of manufacturing and marketing, We at Raut Agro engineering believe in 100% customer satisfaction by providing quality products and excellent after sale service.</h4></p>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body d-flex g-3">
-          <h5 class="card-title"><img src="fu1.png" alt="" width="285px" height="285px" style="border-radius: 50%;"></h5>
-          <p class="card-text"><h3>“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.”</h3></p>
-        </div>
+  <div class="card b container-fluid" style="background-color:  rgb(47, 46, 46);">
+      <img src="fu.jpg" style="border-radius: 50%;" class="card-img-top" alt="...">
+      
+    </div>
+    <div class="card">
+      <div class="card-body ">
+        <p class="card-text"><img align="left" src="q1.png" height="30px" alt=""><h4>  Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.</h4><img src="q2.png" align="right" height="30px" alt=""></p>
       </div>
     </div>
   </div>
-  <br>
+
+
+   <br>
+   
+ 
  <!-- About us & Msg end -->
 
 
   <!-- cards -->
+  <div class="container">
   <font size="5">
     <h1 class="d-flex justify-content-center" style="color: white;"> Our Products </h1>
   </font>
@@ -277,6 +288,7 @@
       </div>
     </div>
   </div>
+</div>
   <br> <br>
   <!-- card end -->
 
@@ -330,8 +342,8 @@
 <br><br>
   <!-- footer -->
 
-  <div class="d-flex justify-content-center g-4  flex-row bd-highlight  bg-dark" style="color: white;">
-    <div align="center" class="card-group bg-dark w-100">
+  <div class="d-flex justify-content-center g-4  flex-row bd-highlight  bg-dark" align="center" style="color: white;">
+    <div  class="card-group bg-dark w-100">
       <div class="card bg-dark">
         <div class="card-body">
           <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -339,7 +351,7 @@
               <path
                 d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
               <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-            </svg> &nbsp; ADDRESS</h5>
+            </svg>  ADDRESS</h5>
           <p class="card-text"> Sonjamb ,<br>
             Nashik, Maharashtra  422205. </p>
         </div>
@@ -391,7 +403,7 @@
   </div>
   <!-- end -->
   <div class="d-flex text-muted">
-    <div class="p-2 flex-fill w-90 ">RAUT AGRO ENGINEERING | All Rights Reserved.</div>
+    <div class="p-2 flex-fill w-90 ">RAUT AGRO ENGINEERING | &nbsp; All Rights Reserved.</div>
     <div class="p-2 flex-shrink-1 ">Designed by Parag Shinde</div>
   </div>
 </body>
