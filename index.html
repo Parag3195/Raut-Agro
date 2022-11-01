@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raut Agro Engineering</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <style>
+    @media screen and (max-width:768px) {
+      [class*="col-6"] {
+        width: 100%;
+      }
+
+
+      @media screen and (max-width: 600px) {
+        div.example {
+          font-size: 30px;
+        }
+      }
+    }
+
+    body {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 15px;
+      background: rgb(47, 46, 46);
+      align-items: center;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: black;
+    }
+
+    .logo {
+      height: 120px;
+      width: 220px;
+
+    }
+
+    .logo-back {
+      background-color: rgb(60, 237, 60);
+    }
+
+    .navbar {
+
+      padding: 15px;
+      font-size: 35px;
+    }
+
+    .bg-tractor {
+      height: 500px;
+
+    }
+
+    .welcome {
+      background: rgb(236, 106, 77);
+    }
+
+    .welcome-text {
+      font-size: 80px;
+      margin-left: 100px;
+      margin-top: 90px;
+      color: white;
+
+    }
+
+    .btn1 {
+      text-decoration: none;
+      border: none;
+      background-color: rgb(60, 237, 60);
+
+    }
+
+    .modal-body {
+      color: black;
+    }
+
+    .modal-body1 {
+      color: black;
+    }
+
+    .footermargin {
+      margin-left: 20px;
+    }
+
+    .center {
+      align-items: center;
+    }
+    .choose{
+     align-items: center;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      font-size:xx-large;
+      font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg logo-back ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="Sandip.png" alt=""></a>
+
+
+
+      <ul class="d-flex navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:sales.rautagro@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="35"
+              height="35" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+            </svg></a>
+        </li>
+        &nbsp;
+        <li class="nav-item">
+
+          <a class="nav-link" href="tel:9096866710"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+              fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg></a>
+
+        </li>
+
+
+    </div>
+
+
+  </nav>
+  <!-- <nav class="navbar navbar-expand   logo-back ">
+
+    <div class="container-fluid ">
+      <a class="navbar-brand " href="#"><img class="logo" src="Sandip.png" alt="#"></a>
+
+      <div class="collapse navbar-collapse d-flex  justify-content-end  logo-back " id="navbarNav">
+        <ul class="navbar-nav d-flex ">
+
+          <ul class="navbar-nav  ">
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:sales.rautagro@gmail.com"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="35" height="35" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                </svg></a>
+            </li>&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="tel:9096866710"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                  fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg></a>
+            </li>
+          </ul>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav> -->
+  <!-- Nav end -->
+
+  <br>
+  <div class="container-fluid shadow">
+    <img src="bg1.jpg" style="max-width:100%;height:auto;" alt=""></a>
+  </div>
+
+  <div class=" position-absolute start-50 top-50 translate-middle  ">
+    <h5 class="welcome-text">Welcome to Raut Agro Engineering</h5>
+  </div>
+
+  <br>
+  <!-- Vision -->
+  <div class="alert alert-warning " role="alert">
+    <font size="5" face="Cooper Black">
+      <h1 class="d-flex justify-content-center"> Vision & Mission</h1>
+    </font>
+    
+    <h2 align="center"> Raut Agro is committed to contribute in success of every indian farmers by providing quality
+      products and
+      services at affordable prices. </h2>
+    </p>
+  </div>
+  
+   <!-- About us & Msg -->
+   <div class="row" >
+    <div class="col-sm-6">
+      <div class="card "  align="center">
+        <div class="card-body">
+          <h2 class="card-title"><font size="9" face="Cooper Black">
+            About us
+          </font></h2>
+          <p class="card-text"><h4> Raut agro is leading manufacturing sales firm from Maharashtra which provides wide range of agricultural equipment’s(Tractor Operated) across India. The company with professionally qualified well experienced persons in the field of manufacturing and marketing, We at Raut Agro engineering believe in 100% customer satisfaction by providing quality products and excellent after sale service. </h4></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body d-flex g-3">
+          <h5 class="card-title"><img src="fu1.png" alt="" width="285px" height="285px" style="border-radius: 50%;"></h5>
+          <p class="card-text"><h3>“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.”</h3></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+ <!-- About us & Msg end -->
+
+
+  <!-- cards -->
+  <font size="5">
+    <h1 class="d-flex justify-content-center" style="color: white;"> Our Products </h1>
+  </font>
+  <br>
+  <div class=" d-flex justify-content-center row row-cols-1 row-cols-md-6 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> <br>
+  <!-- card end -->
+
+ <!-- Why to choose our products ? -->
+ <div class="container" align="center" >
+  <h3 class="choose" >Why choose us</h3>
+  <div class="card-group">
+    <div class="card">
+      <img src="s11.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">On field support </h5>
+        <p class="card-text">We have strong technical team to provide services to customers on site, our technical team members visits plots of farmers.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+     
+      <div class="card-body"> 
+         <img src="s2.png" class="card-img-top" alt="..."> <br> <br>
+        <h5 class="card-title">Advance Technology</h5> 
+        <p class="card-text">We provide the best quality products equiped with latest technology in order to get best results in the field.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="s3.png" class="card-img-top" alt="...">
+      <div class="card-body"> <br>
+        <h5 class="card-title">After sales service</h5>
+        <p class="card-text">We provide end to end service/maintenance for our products.</p>
+      </div>
+    </div>
+  </div>
+ 
+ <div class="card-group">
+  <div class="card">
+    <img src="s4.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Experienced manufacturing </h5>
+      <p class="card-text"> Our founder has around 10 years of experince in this field.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="s5.png" class="card-img-top" alt="...">
+    <div class="card-body"> <br> 
+      <h5 class="card-title"> Subsidy Avaialble </h5>
+    <p class="card-text"> Central government subsidy is available for our products in most of the states of INDIA.</p>
+    </div>
+  </div>
+ 
+</div>
+</div>
+<br><br>
+  <!-- footer -->
+
+  <div class="d-flex justify-content-center g-4  flex-row bd-highlight  bg-dark" style="color: white;">
+    <div align="center" class="card-group bg-dark w-100">
+      <div class="card bg-dark">
+        <div class="card-body">
+          <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg> &nbsp; ADDRESS</h5>
+          <p class="card-text"> Sonjamb ,<br>
+            Nashik, Maharashtra  422205. </p>
+        </div>
+      </div>
+
+      <div class="card bg-dark">
+        <div class="card-body">
+          <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-briefcase" viewBox="0 0 16 16">
+              <path
+                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+            </svg>&nbsp; WORKING HOURS</h5>
+          </h5>
+          <p class="card-text">Mon: 8:30 AM – 9:00 PM <br>
+            Tue: 8:30 AM – 9:00 PM <br>
+            Wed: 8:30 AM – 9:00 PM <br>
+            Thu: 8:30 AM – 9:00 PM <br>
+            Fri: 8:30 AM – 9:00 PM <br>
+            Sat: 8:30 AM – 9:00 PM <br>
+            Sun: 8:30 AM – 9:00 PM</p>
+        </div>
+      </div>
+
+      <div class="card bg-dark ">
+        <div class="card-body">
+          <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-telephone" viewBox="0 0 16 16">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>&nbsp; PHONE AND EMAIL</h5>
+          <p class="card-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone"
+              viewBox="0 0 16 16">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg> &nbsp; <a style="color: white ; text-decoration: none;" href="tel:9096866710">9096866710</a>
+            <br>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg> &nbsp;
+            <a style="color: white ; text-decoration: none;"
+              href="mailto:sales.rautagro@gmail.com">sales.rautagro@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+  <div class="d-flex text-muted">
+    <div class="p-2 flex-fill w-90 ">RAUT AGRO ENGINEERING | All Rights Reserved.</div>
+    <div class="p-2 flex-shrink-1 ">Designed by Parag Shinde</div>
+  </div>
+</body>
+
+</html>
