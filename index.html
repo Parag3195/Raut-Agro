@@ -161,6 +161,25 @@ div.page {
   .navbar-toggler-icon{
    background-color:  rgb(60, 237, 60);
   }
+  #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(60, 237, 60); /* Set a background color */
+  color: rgb(11, 11, 11); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: white; /* Add a dark-grey background on hover */
+}
   @media(max-width:952px){
       label.logo{
         font-size: 30px;
@@ -190,7 +209,7 @@ div.page {
 <body>
   
 <!-- nav  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+  <nav class="navbar navbar-expand-lg  navbar-light bg-dark ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img class="logo" src="Sandip.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -350,7 +369,7 @@ div.page {
     <div class=" d-flex justify-content-center row row-cols-1 row-cols-md-5 g-4">
       <div class="col">
         <div class="card">
-          <img src="1.png" height="200px" width="200px" class="card-img-top" alt="...">
+          <img src="1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Two bottom reversible plough</h5>
            <p class="card-text">Available in 8 , 9 , 10 , 12 & 14 inch</p>
@@ -367,8 +386,8 @@ div.page {
         </div>
       </div>
       <div class="col">
-        <div class="card">
-          <img src="th.png" class="card-img-top" alt="...">
+        <div class="card"> <br>
+          <img src="th.png" class="card-img-top" alt="..."> <br> 
           <div class="card-body">
             <h5 class="card-title">Two bottom reversible hydraulic plough</h5>
             <p class="card-text">Available in 12 & 14 inch</p>
@@ -391,7 +410,9 @@ div.page {
       <div class="card">
         <img src="th1.png" class="card-img-top" alt="..."> 
         <div class="card-body">
-          <h5 class="card-title">Trailer two wheels (Hydraulic) 3.5 X 6</h5>
+          <h5 class="card-title">Trailer two wheels (Hydraulic) </h5>
+          <p class="card-text">3.5 X 6</p>
+
         </div>
       </div>
     </div>
@@ -399,7 +420,9 @@ div.page {
       <div class="card">
         <img src="th22.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Trailer two wheels (Hydraulic) 7 X 4</h5>
+          <h5 class="card-title">Trailer two wheels (Hydraulic)</h5>
+          <p class="card-text"> 7 X 4</p>
+
         </div>
       </div>
     </div>
@@ -407,7 +430,9 @@ div.page {
       <div class="card">
         <img src="th3.png" class="card-img-top" alt="..."> 
         <div class="card-body">
-          <h5 class="card-title">Trailer two wheels (Hydraulic) 10 X 6</h5>
+          <h5 class="card-title">Trailer two wheels (Hydraulic)</h5>
+          <p class="card-text"> 10 X 6</p>
+
         </div>
       </div>
     </div>
@@ -465,6 +490,11 @@ div.page {
     </div>
   </div>
   <br><br>
+  <!-- top arrow -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg></button>
+  
   <!-- footer -->
 
   <div class="d-flex justify-content-center g-4  flex-row bd-highlight  bg-dark" align="center" style="color: white;">
@@ -538,9 +568,24 @@ div.page {
   </div>
 </body>
 <script>
-   $("a").click(function(){
-  var pageId = $(this).attr("data-page");
-  $("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
-});
+  
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 </script>
 </html>
